@@ -14,6 +14,7 @@ function App() {
     }}
     >
       <div style={{ padding: 24, display: 'flex' }}>
+        <Button>default</Button>
         <Button btnType="primary">primary</Button>
         <Button btnType="primary" disabled>disabled</Button>
         <Button btnType="danger">danger</Button>

@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest",
+    "test_watch": "jest --watch"
   },
   "dependencies": {
     "ahooks": "^3.7.6",

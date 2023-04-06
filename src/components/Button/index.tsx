@@ -25,6 +25,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
     href,
     disabled,
     children,
+    className,
     ...rest
   } = props;
 
@@ -32,7 +33,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
     [`btn-${btnType}`]: btnType,
     [`btn-${size}`]: size,
     disabled,
-  });
+  }, className);
 
   if (btnType === 'link' && href) {
     return (
@@ -46,12 +47,12 @@ export const Button: React.FC<ButtonProps> = (props) => {
     );
   }
   return (
-    <button className={classes} {...rest}>{children}</button>
+    <button className={classes} disabled={disabled} {...rest}>{children}</button>
   );
 };
 
 Button.defaultProps = {
-  btnType: 'primary',
+  btnType: 'default',
   size: 'small',
   disabled: false,
 };
