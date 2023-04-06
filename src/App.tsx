@@ -26,15 +26,6 @@ function App() {
         <Button size="small">small</Button>
       </div>
       <div style={{ padding: 24 }}>
-        <Swiper2></Swiper2>
-        {/*<Alert title="hello world" type="success" />*/}
-      </div>
-      <div style={{ padding: 24 }}>
-        <Swiper></Swiper>
-        {/*<Alert title="hello world" type="success" />*/}
-      </div>
-
-      <div style={{ padding: 24 }}>
         <Alert
           title="hello world"
           type="warning"
@@ -44,6 +35,33 @@ function App() {
             console.log('click close');
           }}
         />
+      </div>
+      <div style={{ padding: 24 }}>
+        <Alert
+          title="hello world"
+          type="warning"
+          closable
+          description="111"
+          className="test-alert"
+          onClose={() => {
+            console.log('click close');
+          }}
+        />
+      </div>
+      <div style={{ padding: 24 }}>
+        <Alert
+          title="success"
+          type="success"
+        />
+      </div>
+      <div style={{ padding: 24 }}>
+        <Alert
+          title="danger"
+          type="danger"
+        />
+      </div>
+      <div style={{ padding: 24 }}>
+        <Alert title="default" />
       </div>
     </div>
   );
