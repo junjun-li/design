@@ -50,8 +50,8 @@ function App() {
       </div>
       <div style={{ padding: 24 }}>
         <Alert
-          title="success"
-          type="success"
+          title="aaaa"
+          type="success" description="desc" closable={false}
         />
       </div>
       <div style={{ padding: 24 }}>
